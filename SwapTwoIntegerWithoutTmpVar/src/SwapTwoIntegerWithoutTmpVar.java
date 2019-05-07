@@ -1,5 +1,5 @@
 /**
- * SwapTwoIntegerWithoutTmpVar
+ * SwapTwoIntegerWithoutTmpVar - programm swap the content of two integer number without temporary variable
  *
  * Version 1.0
  *
