@@ -1,5 +1,6 @@
 /**
  * AverageGeomAndArithm
+ *  Program have to find Average mathematic and average Geometric of 6-digits number
  *
  * Version 1.0
  *
@@ -84,7 +85,7 @@ public class AverageGeomAndArithm {
 		public static void main(String[] args) {
 			/*creating new object of class*/
 			AverageGeomAndArithm tempObj=new AverageGeomAndArithm();
-			/*ââîä ÷èñëà*/
+			/*Ã¢Ã¢Ã®Ã¤ Ã·Ã¨Ã±Ã«Ã */
 			tempObj.setNum();
 			/*counting of digits in number*/
 			tempObj.countOfDigitsInNum=tempObj.digitsInNum(tempObj.num);
