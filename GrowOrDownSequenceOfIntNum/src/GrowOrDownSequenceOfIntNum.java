@@ -1,20 +1,29 @@
-
+/**
+ * GrowOrDownSequenceOfIntNum-Programm is cheking for growing or reduction(downing) for every all chain-digits in a  4digits number 
+ * (1347 - growing, 8642-downing)  
+ *
+ * Version 1.0
+ *
+ * Date 06.05.2019
+ *
+ * Writen by denisgossa doitnow@tut.by
+ */
 import java.util.Scanner;
 import java.util.ArrayList;
 
 public class GrowOrDownSequenceOfIntNum {
 private int num;
-private int countOfDigitsInNum; /* переменная для хранения оличества разрядов в числе*/
+private int countOfDigitsInNum; /* the count of digits in getting num
 private ArrayList<Integer> array = new ArrayList<Integer>();
 
 
-/*функция установки num*/
+/*Setting number function*/
 private void setNum() {
 	num=getInt();
 	};
 
 	
-/*ввод числа int с консоли с проверкой*/
+/*Entering integer number function*/
 public static int getInt() {
 	Scanner sc = new Scanner(System.in);
 	int number;
@@ -31,7 +40,7 @@ public static int getInt() {
 	
 }	
 
-/*количество разрядов в полученном числе*/
+/*Fuction of finding count of digit in number*/
 int digitsInNum(int n) {
 	
 	   if ( n < 0 ) return digitsInNum(-n);
@@ -39,7 +48,7 @@ int digitsInNum(int n) {
 	   return (1 + digitsInNum( n / 10 ));
 	}
 	
-/*для удобства работы преобразовываем введенное число в массив ArrayList*/
+/*Funtion of convertation of number to ArrayList*/
 void intToArr(int tmp){
 		do{
 	    array.add(0,tmp % 10);
@@ -49,7 +58,7 @@ void intToArr(int tmp){
 	
 }
 
-/*проверка чисел из Arraylist на возрастание*/
+/*fuction of Cheking all digits for growing*/
 public boolean  checkListOnGrow(ArrayList<Integer> array) {
 	int current=array.get(0);
 	for(int i=1;i<array.size();i++)
@@ -61,7 +70,7 @@ public boolean  checkListOnGrow(ArrayList<Integer> array) {
 	return true;
 }
 
-/*проверка чисел из Arraylist на убывание*/
+/*fuction of Cheking all digits for downing*/
 public boolean  checkListOnDown(ArrayList<Integer> array) {
 	int current=array.get(0);
 	for(int i=1;i<array.size();i++)
@@ -79,29 +88,29 @@ public boolean  checkListOnDown(ArrayList<Integer> array) {
 
 	
 	public static void main(String[] args) {
-		/*собздание нового объекта*/
+		/*Creating new object*/
 		GrowOrDownSequenceOfIntNum tempObj=new GrowOrDownSequenceOfIntNum();
-		/*ввод числа*/
+		/*Setting number*/
 		tempObj.setNum();
-		/*подсчет числа разрядов в введенном числе*/
+		/*Finding count of digits in num*/
 		tempObj.countOfDigitsInNum=tempObj.digitsInNum(tempObj.num);
 		
-		/*по условию задачи разрядов должно быть 4*/
+		/*Checking count of digit on 4 sign*/
 		if(tempObj.countOfDigitsInNum!=4) {
 			System.out.println("a num of Digits num must be 4");return;
 		}
 		
-		/*вывод сообщения о колчиестве разрядов*/
+		/*MSG output*/
 		System.out.println("Digits in num: "+tempObj.countOfDigitsInNum);
 		
-		/*преобразование числа в ArrayList*/
+		/*Convert num into an ArrayList*/
 		tempObj.intToArr(tempObj.num);
 		
-		/*вывод числа как элементов ArrayList*/
+		/*control output ArrayList*/
 		for(int i=0;i<tempObj.array.size();i++)
 			{System.out.print(tempObj.array.get(i)+" ");}
 		
-	/*проверка на рост или убывание элементов*/	
+	/*Checking content for growing ,downing*/	
 	boolean isGrow=tempObj.checkListOnGrow(tempObj.array);
 	boolean isDown=tempObj.checkListOnDown(tempObj.array);
 	if(isGrow) {System.out.println("ARRAY IS GROW");}
