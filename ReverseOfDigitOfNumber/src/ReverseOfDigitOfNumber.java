@@ -1,5 +1,5 @@
 /**
- * ReverseOfDigitOfNumber
+ * ReverseOfDigitOfNumber- reverse of 7digits number
  *
  * Version 1.0
  *
@@ -9,7 +9,7 @@
  */
 import java.util.Scanner;
 import java.util.ArrayList;
-import java. util. Collections;
+import java.util.Collections;
 
 public class ReverseOfDigitOfNumber {
 	private int num; /*Number for processing*/
