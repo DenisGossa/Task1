@@ -1,5 +1,5 @@
 /**
- * DinozaurWeight
+ * DinozaurWeight- Program for convert weight of Dinozaur given in kilogramms into milligramms,gramms and tons.
  *
  * Version 1.0
  *
