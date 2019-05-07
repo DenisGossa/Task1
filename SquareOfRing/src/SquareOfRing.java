@@ -1,5 +1,6 @@
 /**
- * SquareOfRing
+ * SquareOfRing-Programm find a square of ring between a circle with a radius R1 and a circle with radius r2(r1>r2).The center of circles
+ * is the same.
  *
  * Version 1.0
  *
