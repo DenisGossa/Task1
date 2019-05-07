@@ -1,5 +1,9 @@
 # Task1
-Основное задание №1
+Sorry for Eclipse's folders structure
+java code in "src" folder
+
+
+Основное задание №1 - 
 
 1) Разработайте программу, которая проверяет, что числа a, b и c различны
 (одинаковы).
@@ -21,4 +25,4 @@ R2). Разработайте программу нахождения площа
 дополнительных переменных.
 
 
-Sorry for Eclipse's folders structure
+
