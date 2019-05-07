@@ -1,5 +1,5 @@
 /**
- * TestIntValuesABC 
+ * TestIntValuesABC -programm test integer a,b,c for equals or not equals with each other.
  *
  * Version 1.0
  *
