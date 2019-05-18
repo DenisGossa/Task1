@@ -1,7 +1,7 @@
 /**
  * TestIntValuesABC -programm test integer a,b,c for equals or not equals with each other.
  *
- * Version 1.0
+ * Version 1.0 (V 1.1-18.05.19)
  *
  * Date 04.05.2019
  *
