@@ -43,11 +43,22 @@ public static int getInt() {
 }
 
 void testIntNum() {
-	if(a==b & a==c & c==b) {System.out.println("a=b=c");return;}
-	if(a==b) {System.out.println("a=b");}
-	else if(a==c) {System.out.println("a=c");}
-	else if(b==c) {System.out.println("b=c");}
-	else {System.out.println("a,b,c not equal");}
+	if(a==b && a==c) {
+		System.out.println("a=b=c");
+		return;
+	}
+	if(a==b) {
+		System.out.println("a=b");
+	}
+	else if(a==c) {
+		System.out.println("a=c");
+	}
+	else if(b==c) {
+		System.out.println("b=c");
+	}
+	else {
+		System.out.println("a,b,c not equal");
+	}
 	
 	
 }
@@ -56,16 +67,16 @@ void testIntNum() {
 	
 	public static void main(String[] args) {
 		
-		TestIntValuesABC TestIntabc=new TestIntValuesABC();
+		TestIntValuesABC testIntABC=new TestIntValuesABC();
 		
 		
-		TestIntabc.seta();		
-		TestIntabc.setb();
-		TestIntabc.setc();
+		testIntABC.setA();		
+		testIntABC.setB();
+		testIntABC.setC();
 		
-		System.out.println("a:"+TestIntabc.a+" b:"+TestIntabc.b+" c:"+TestIntabc.c);
+		System.out.println("a:"+testIntABC.a+" b:"+testIntABC.b+" c:"+testIntABC.c);
 		
-		TestIntabc.testIntNum();
+		testIntABC.testIntNum();
 	}
 
 }
